@@ -5,7 +5,7 @@ state("flashplayer_32_sa")
 
 start
 {
-    return(old.loading != current.loading && old.loading > 1);
+    return(current.loading == 0 && old.loading > 1);
 }
 
 split
